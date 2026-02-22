@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -63,7 +63,9 @@
       align-items: center;
       justify-content: space-between;
     }
-
+    a.logo {
+    text-decoration: none;
+    }
     .logo {
       font-size: 28px;
       font-weight: 700;
@@ -512,7 +514,8 @@
 <body>
   <header>
     <div class="container header-inner">
-      <div class="logo">KALKIDAN YOHANNES</div>
+      
+      <a href="#hero" class="logo">KALKIDAN</a>
       <nav>
         <ul id="nav-menu">
           <li><a href="#about" class="nav-link">About</a></li>
@@ -529,7 +532,7 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="container">
         <h1>I'm Kalkidan Yohannes <br><span class="highlight">UI/UX & web designer</span></h1>
         <p>Crafting human-centered interfaces that blend beauty with function. Let's turn ideas into digital experiences.</p>
@@ -545,14 +548,14 @@
       <div class="container">
         <div class="about-grid">
          <div class="about-img">
-           <img src="about.jpg" alt="kali" style="width:100%; border-radius:50%;">
+           <img src="images/about.jpg" alt="kali" style="width:100%; border-radius:50%;">
          </div>
           <div class="about-text">
             <h2 class="section-title">About me</h2>
             <p>Hello! I'm Kalkidan, a UI/UX designer and web designer with a passion for clean, intuitive interfaces. Over the past 5 years I've helped startups and agencies create designs that users love — from research to pixel-perfect execution.</p>
             <p>I believe great design is invisible: it guides, delights, and solves problems without friction. Outside design, I sketch, drink too much coffee, and collect vintage design books.</p>
             <div class="skill-tags">
-              <span>User research</span><span>Wireframing</span><span>Prototyping</span><span>Figma</span><span>Adobe XD</span><span>HTML/CSS</span><span>Responsive web</span>
+               <span>UI UX Design</span><span>User research</span><span>Wireframing</span><span>Prototyping</span><span>Figma</span><span>Adobe XD</span><span>HTML/CSS</span><span>Responsive web</span>
             </div>
           </div>
         </div>
@@ -569,7 +572,7 @@
               <img src="https://picsum.photos/id/1015/400/300" alt="modern banking app interface" loading="lazy">
             </div>
             <div class="card-content">
-              <h3>Finova Bank</h3>
+              <h3>Web Design</h3>
               <p>UI/UX · mobile banking app with dark mode & accessibility</p>
             </div>
           </div>
@@ -578,7 +581,7 @@
               <img src="https://picsum.photos/id/1018/400/300" alt="travel website on laptop" loading="lazy">
             </div>
             <div class="card-content">
-              <h3>Wanderlust</h3>
+              <h3>Saas UX</h3>
               <p>Travel platform · web design + interactive prototypes</p>
             </div>
           </div>
@@ -587,7 +590,7 @@
               <img src="https://picsum.photos/id/1043/400/300" alt="fitness dashboard" loading="lazy">
             </div>
             <div class="card-content">
-              <h3>FitDash</h3>
+              <h3>Mobile App Design</h3>
               <p>UX research & dashboard design for fitness tracker</p>
             </div>
           </div>
@@ -596,7 +599,7 @@
               <img src="https://picsum.photos/id/1/400/300" alt="e-commerce product page" loading="lazy">
             </div>
             <div class="card-content">
-              <h3>Urban Store</h3>
+              <h3>Web App</h3>
               <p>E‑commerce UI · web design & checkout flow</p>
             </div>
           </div>
@@ -617,7 +620,7 @@
           <div class="service-item">
             <i class="fas fa-users"></i>
             <h3>Saas UX</h3>
-            <p>User interviews, personas, journey maps & usability testing.</p>
+            <p>Designing SaaS experiences that drive activation and retention – from first login to power‑user features.</p>
           </div>
           <div class="service-item">
             <i class="fas fa-laptop-code"></i>
@@ -652,7 +655,8 @@
               <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-          <form class="contact-form" action="#" method="post">
+          <form class="contact-form" action="https://formspree.io/f/xjgeaqel" method="post">
+          <input type="hidden" name="_subject" value="Subject">
             <div class="form-group">
               <input type="text" name="name" placeholder="Your name" required>
             </div>
@@ -716,5 +720,4 @@
     })();
   </script>
 </body>
-
 </html>
