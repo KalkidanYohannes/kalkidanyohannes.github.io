@@ -509,9 +509,43 @@
       .hero h1 { font-size: 2.5rem; }
       .section-title { font-size: 2rem; }
     }
+    .blob {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: rgba(95, 108, 223, 0.15);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+    pointer-events: none;
+    animation: drift 20s infinite alternate ease-in-out;
+}
+
+.blob1 {
+    top: -100px;
+    left: -100px;
+    background: rgba(95, 108, 223, 0.2);
+}
+
+.blob2 {
+    bottom: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: rgba(167, 139, 250, 0.15);
+    animation-duration: 25s;
+    animation-delay: -5s;
+}
+
+@keyframes drift {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(60px, 40px) scale(1.1); }
+}
   </style>
 </head>
 <body>
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
   <header>
     <div class="container header-inner">
       
@@ -548,12 +582,12 @@
       <div class="container">
         <div class="about-grid">
          <div class="about-img">
-           <img src="about.jpg" alt="kali" style="width:100%; border-radius:50%;">
+           <img src="images/about.jpg" alt="kali" style="width:100%; border-radius:50%;">
          </div>
           <div class="about-text">
             <h2 class="section-title">About me</h2>
             <p>Hello! I'm Kalkidan, a UI/UX designer and web designer with a passion for clean, intuitive interfaces. Over the past 5 years I've helped startups and agencies create designs that users love — from research to pixel-perfect execution.</p>
-            <p>I believe great design is invisible: it guides, delights, and solves problems without friction. Outside design, I sketch, drink too much coffee, and collect vintage design books.</p>
+            <p>I believe great design is invisible: it guides, delights, and solves problems without friction. Outside design, I sketch, drink too much coffee, and listen music.</p>
             <div class="skill-tags">
                <span>UI UX Design</span><span>User research</span><span>Wireframing</span><span>Prototyping</span><span>Figma</span><span>Adobe XD</span><span>HTML/CSS</span><span>Responsive web</span>
             </div>
@@ -569,38 +603,39 @@
         <div class="portfolio-grid">
           <div class="portfolio-card">
             <div class="card-img">
-              <img src="https://picsum.photos/id/1015/400/300" alt="modern banking app interface" loading="lazy">
+             
+              <img src="images/webdesign.jpg" alt="kali" style="width:100%;">
             </div>
             <div class="card-content">
               <h3>Web Design</h3>
-              <p>UI/UX · mobile banking app with dark mode & accessibility</p>
+              <p>Clean & user friendly Web design</p>
             </div>
           </div>
           <div class="portfolio-card">
             <div class="card-img">
-              <img src="https://picsum.photos/id/1018/400/300" alt="travel website on laptop" loading="lazy">
+               <img src="images/saas.jpg" alt="kali" style="width:100%;">
             </div>
             <div class="card-content">
               <h3>Saas UX</h3>
-              <p>Travel platform · web design + interactive prototypes</p>
+              <p>Saas designs for your company need</p>
             </div>
           </div>
           <div class="portfolio-card">
             <div class="card-img">
-              <img src="https://picsum.photos/id/1043/400/300" alt="fitness dashboard" loading="lazy">
+               <img src="images/Mobile Appui.jpg" alt="kali" style="width:100%;">
             </div>
             <div class="card-content">
               <h3>Mobile App Design</h3>
-              <p>UX research & dashboard design for fitness tracker</p>
+              <p>Mobile App Design for your business </p>
             </div>
           </div>
           <div class="portfolio-card">
             <div class="card-img">
-              <img src="https://picsum.photos/id/1/400/300" alt="e-commerce product page" loading="lazy">
+               <img src="images/branding.jpg" alt="kali" style="width:100%;">
             </div>
             <div class="card-content">
-              <h3>Web App</h3>
-              <p>E‑commerce UI · web design & checkout flow</p>
+              <h3>Branding</h3>
+              <p>Branding and Graphics Design</p>
             </div>
           </div>
         </div>
@@ -649,10 +684,10 @@
             <div class="info-line"><i class="fas fa-map-marker-alt"></i> Addis Ababa , Ethiopia</div>
             <div class="social-links">
              
-              <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.behance.net/kalkidayohannes" aria-label="Behance"><i class="fab fa-behance"></i></a>
+              <a href="https://www.linkedin.com/in/kali-john/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/judi.queen.16" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/judi_bornagain?igsh=em51MHRwdnkyNGk=" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
           <form class="contact-form" action="https://formspree.io/f/xjgeaqel" method="post">
@@ -721,4 +756,3 @@
   </script>
 </body>
 </html>
-
